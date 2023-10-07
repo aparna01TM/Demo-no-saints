@@ -1,0 +1,24 @@
+.section-containerr{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.container-elementt{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    justify-content: center;
+    align-items: center;
+}
+.container-elementt p{
+    text-align:center;
+}
+.testimonial-section-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:1400px;
+    margin: 0 auto;
+}

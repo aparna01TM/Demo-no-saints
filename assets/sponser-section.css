@@ -1,0 +1,12 @@
+.sponser-section-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap:70px;
+}
+.sponser-section-container h1{
+    font-family: BlackDragon;
+    font-size: 48px;
+    font-weight: 900;
+}

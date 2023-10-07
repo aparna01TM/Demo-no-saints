@@ -1,0 +1,68 @@
+{% schema %}
+{
+    "name":"logo-section",
+    "blocks": [
+        {
+          "type": "first-logo",
+          "name": "First Logo",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "logo-section-image-1",
+              "label": "First Logo"
+            }
+          ]
+        },
+        {
+            "type": "second-logo",
+            "name": "Second Logo",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "logo-section-image-2",
+                "label": "Second Logo"
+              }
+            ]
+          },
+          {
+            "type": "third-logo",
+            "name": "Third Logo",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "logo-section-image-3",
+                "label": "Third Logo"
+              }
+            ]
+          }
+    ],
+    "presets": [
+            {
+              "name": "logo-section"
+            }
+        ]
+    }
+{% endschema %}
+<link rel="stylesheet" href="{{ 'logo-section.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="logo-section-container">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'first-logo'-%}
+            <div class="logo"> 
+                {{ block.settings.logo-section-image-1 | image_url: width: 200, height:44 | image_tag }}
+            </div>
+            {%- when 'second-logo'-%}
+            <div class="logo"> 
+                {{ block.settings.logo-section-image-2 | image_url: width: 200, height:70 | image_tag }}
+            </div>
+            {%- when 'third-logo'-%}
+            <div class="logo"> 
+                {{ block.settings.logo-section-image-3 | image_url: width: 200, height:95 | image_tag }}
+            </div>
+        {%- endcase -%}
+    {%- endfor -%}
+</div>
+

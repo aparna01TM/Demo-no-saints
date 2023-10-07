@@ -10,6 +10,20 @@
   padding-bottom: 5rem;
   display: block;
 }
+#email{
+  width: 400px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#subscribe{
+  background-color: #f40046;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+}
 
 @media screen and (max-width: 749px) {
   .footer .grid {
@@ -146,12 +160,14 @@
 .footer-block__heading {
   margin-bottom: 2rem;
   margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.6rem); */
+  font-size:20px;
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
+    margin-bottom:0;
   }
 }
 
@@ -170,8 +186,15 @@
 }
 
 .footer-block__newsletter {
+  display: flex;
   text-align: center;
   flex-grow: 1;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 30px;
+}
+.footer-block__newsletter form{
+  display:flex;
 }
 
 .newsletter-form__field-wrapper {

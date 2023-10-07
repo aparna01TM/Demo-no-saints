@@ -1,0 +1,83 @@
+{% schema %}
+{
+    "name":"brand-section",
+    "blocks": [
+        {
+          "type": "first-brand",
+          "name": "First Brand",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "brand-section-image-1",
+              "label": "First Brand"
+            }
+          ]
+        },
+        {
+            "type": "second-brand",
+            "name": "Second Brand",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "brand-section-image-2",
+                "label": "Second Brand"
+              }
+            ]
+          },
+          {
+            "type": "third-brand",
+            "name": "Third Brand",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "brand-section-image-3",
+                "label": "Third Brand"
+              }
+            ]
+          },
+          {
+            "type": "fourth-brand",
+            "name": "Fourth Brand",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "brand-section-image-4",
+                "label": "Fourth Brand"
+              }
+            ]
+          }
+    ],
+    "presets": [
+            {
+              "name": "brand-section"
+            }
+        ]
+    }
+{% endschema %}
+<link rel="stylesheet" href="{{ 'brand-section.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="brand-section-container">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'first-brand'-%}
+            <div class="brand"> 
+                {{ block.settings.brand-section-image-1 | image_url: width: 200, height: 55 | image_tag }}
+            </div>
+            {%- when 'second-brand'-%}
+            <div class="brand"> 
+                {{ block.settings.brand-section-image-2 | image_url: width: 200, height: 44 | image_tag }}
+            </div>
+            {%- when 'third-brand'-%}
+            <div class="brand"> 
+                {{ block.settings.brand-section-image-3 | image_url: width: 200, height: 86 | image_tag }}
+            </div>
+            {%- when 'fourth-brand'-%}
+              <div class="brand"> 
+                  {{ block.settings.brand-section-image-4 | image_url: width: 200, height: 47 | image_tag }}
+              </div>
+        {%- endcase -%}
+    {%- endfor -%}
+</div>

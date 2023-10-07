@@ -1,0 +1,122 @@
+<script src="{{ 'custom-banner.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name":"custom-banner",
+    "blocks": [
+        {
+          "type": "first-image",
+          "name": "First Image",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "custom-banner-image-1",
+              "label": "First Image"
+            }
+          ]
+        },
+        {
+            "type": "second-image",
+            "name": "Second Image",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "custom-banner-image-2",
+                "label": "Second Image"
+              }
+            ]
+          },
+          {
+            "type": "third-image",
+            "name": "Third Image",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "custom-banner-image-3",
+                "label": "Third Image"
+              }
+            ]
+          },
+          {
+            "type": "fourth-image",
+            "name": "Fourth Image",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "custom-banner-image-4",
+                "label": "Fourth Image"
+              }
+            ]
+          },
+          {
+            "type": "fifth-image",
+            "name": "Fifth Image",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "custom-banner-image-5",
+                "label": "Fifth Image"
+              }
+            ]
+          },
+          {
+            "type": "sixth-image",
+            "name": "Sixth Image",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "custom-banner-image-6",
+                "label": "Sixth Image"
+              }
+            ]
+          } 
+    ],
+    "presets": [
+        {
+          "name": "custom-banner"
+        }
+    ]
+}
+{% endschema %}
+<link rel="stylesheet" href="{{ 'custom-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="slider-container">
+    <div class="slider">
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}  
+              {%- when 'first-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-1 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+              {%- when 'second-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-2 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+              {%- when 'third-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-3 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+              {%- when 'fourth-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-4 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+              {%- when 'fifth-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-5 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+              {%- when 'sixth-image'-%}
+                <div class="slide">
+                    {{ block.settings.custom-banner-image-6 | image_url: width: 1200, height:768 | image_tag }}
+                </div>
+            {%- endcase -%}
+        {%- endfor -%}
+    </div>
+    <div class="slider-nav">
+      <button id="prevBtn">-</button>
+      <button id="nextBtn">+</button>
+    </div>
+</div>

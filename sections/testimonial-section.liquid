@@ -1,0 +1,50 @@
+{% comment %} {{ 'testimonial-section.css' | asset_url | stylesheet_tag }} {% endcomment %}
+<script src="{{ 'testimonial-section.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name":"testimonial-section",
+    "blocks": [
+        {
+          "type": "review",
+          "name": "Review",
+          "settings": [
+            {
+              "type": "text",
+              "id": "testimonial-section-review",
+              "label": "Review"
+            },
+            {
+                "type": "text",
+                "id": "testimonial-section-author",
+                "label": "Author"
+            }
+          ]
+        }
+    ],
+    "presets": [
+            {
+              "name": "testimonial-section"
+            }
+        ]
+    }
+{% endschema %}
+<link rel="stylesheet" href="{{ 'testimonial-section.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="testimonial-section-container">
+<div class="left-arrow" id="left-arrow">-</div>
+    <div class="section-containerr"> 
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'review'-%} 
+                <div class="container-elementt">
+                    <p>
+                        {{ block.settings.testimonial-section-review }}
+                    </p>
+                    <p>
+                        {{ block.settings.testimonial-section-author }}
+                    </p>
+                </div>
+            {%- endcase -%}
+        {%- endfor -%}   
+    </div>
+<div class="right-arrow" id="right-arrow">+</div>
+</div>

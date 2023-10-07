@@ -1,0 +1,263 @@
+{{ 'custom-product-collection.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name":"product-collection",
+    "settings":[
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured-collection.settings.collection.label"
+         },
+         {
+          "type": "checkbox",
+          "id": "enable_quick_add",
+          "default": false,
+          "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
+        }
+    ],
+    "blocks":[
+        {
+            "type": "popup",
+            "name": "t:sections.main-product.blocks.popup.name",
+            "settings": [
+              {
+                "type": "text",
+                "id": "text",
+                "default": "Pop-up link text",
+                "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+              },
+              {
+                "id": "page",
+                "type": "page",
+                "label": "t:sections.main-product.blocks.popup.settings.page.label"
+              }
+            ]
+          }
+    ],
+    "presets":[
+        {
+            "name":"product-collection"
+        }
+    ]
+}
+{% endschema %}
+<div class="product-collection-container">
+    {%- for product in section.settings.collection.products limit: 6 -%}
+     <div class="product-collection">
+        <a href="{{product.url}}">
+        {{ product.featured_media | image_url: width: 266 | image_tag }}
+        </a>
+                {% comment %} <modal-opener
+                    class="product-popup-modal__opener no-js-hidden quick-add-hidden"
+                    data-modal="#PopupModal-{{ block.id }}"
+                    {{ block.shopify_attributes }}
+                >
+                    <button
+                    id="ProductPopup-{{ block.id }}"
+                    class="product-popup-modal__button link"
+                    type="button"
+                    aria-haspopup="dialog"
+                    >
+                        <span>{%- render 'icon-plus' -%}</span>
+                    </button>
+                </modal-opener> {% endcomment %}
+                {% assign show_quick_add = section.settings.enable_quick_add %}
+                {%- if show_quick_add -%}
+                  <div class="quick-add no-js-hidden">
+                    {%- liquid
+                      assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
+                      assign qty_rules = false
+                      if card_product.selected_or_first_available_variant.quantity_rule.min > 1 or card_product.selected_or_first_available_variant.quantity_rule.max != null or card_product.selected_or_first_available_variant.quantity_rule.increment > 1
+                        assign qty_rules = true
+                      endif
+                    -%}
+                {% assign card_product = product %}
+                <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
+                  <button
+                    id="{{ product_form_id }}-submit"
+                    type="submit"
+                    name="add"
+                    class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
+                    aria-haspopup="dialog"
+                    aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                    data-product-url="{{ card_product.url }}"
+                  >
+                    <span>{%- render 'icon-plus' -%}</span>
+                    {%- if horizontal_quick_add -%}
+                      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                    {%- endif -%}
+                    <div class="loading-overlay__spinner hidden">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </div>
+                  </button>
+                </modal-opener>
+                <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
+                  <div
+                    role="dialog"
+                    aria-label="{{ 'products.product.choose_product_options' | t: product_name: card_product.title | escape }}"
+                    aria-modal="true"
+                    class="quick-add-modal__content global-settings-popup"
+                    tabindex="-1"
+                  >
+                    <button
+                      id="ModalClose-{{ card_product.id }}"
+                      type="button"
+                      class="quick-add-modal__toggle"
+                      aria-label="{{ 'accessibility.close' | t }}"
+                    >
+                      {% render 'icon-close' %}
+                    </button>
+                    <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
+                  </div>
+                </quick-add-modal>
+              {% endif %}
+            {% comment %} {% endcase %}
+        {% endfor %} {% endcomment %}
+            {% comment %} {% assign popups = section.blocks | where: 'type', 'popup' %}
+            {%- for block in popups -%}
+                <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+                <div
+                    role="dialog"
+                    aria-label="{{ block.settings.text }}"
+                    aria-modal="true"
+                    class="product-popup-modal__content"
+                    tabindex="-1"
+                >
+                    <button
+                    id="ModalClose-{{ block.id }}"
+                    type="button"
+                    class="product-popup-modal__toggle"
+                    aria-label="{{ 'accessibility.close' | t }}"
+                    >
+                    {% render 'icon-close' %}
+                    </button>
+                    <div class="product-popup-modal__content-info">
+                    {% comment %} {{ block.settings.page.content }} {% endcomment %}
+                    {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: block.settings.image_ratio,
+                        show_secondary_image: false,
+                        lazy_load: false,
+                        show_quick_add: block.settings.enable_quick_add,
+                        section_id: section.id,
+                        horizontal_class: true,
+                        horizontal_quick_add: true
+                    %}
+                    <div>{{ product.options }}</div>
+                    {% render 'product-variant-picker', product: product %}
+                    {{ product.description }}
+                    {%- render 'buy-buttons', product: product -%}
+                    {%- unless product.has_only_default_variant -%}
+                        {%- for option in product.options_with_values -%}
+                      
+                          {%- if section.settings.product_selector == 'radio' -%}
+                            <fieldset id="ProductSelect-option-{{ forloop.index0 }}" name="{{ option.name | handleize }}">
+                              <legend>
+                                {{ option.name | escape }}
+                              </legend>
+                              {%- for value in option.values -%}
+                                <!-- Check to see if there's a product size option. If there is a size, check to see if there's any availble for purchase. If not, set the variat control in a "disabled" state. -->
+                                {%- assign variant_label_state = true -%}
+                      
+                                {%- if product.options.size == 1 -%}
+                                  {%- unless product.variants[forloop.index0].available -%}
+                                    {%- assign variant_label_state = false -%}
+                                  {%- endunless -%}
+                                {%- endif -%}
+                      
+                                <input type="radio"
+                                  {% if option.selected_value == value %} checked="checked"{% endif %}
+                                  {% unless variant_label_state %} disabled="disabled"{% endunless %}
+                                  value="{{ value | escape }}"
+                                  data-index="option{{ forloop.index }}"
+                                  name="{{ option.name | handleize }}"
+                                  id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}">
+                                <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}">
+                                  {{ value | escape }}
+                                </label>
+                              {%- endfor -%}
+                            </fieldset>
+                          {%- else -%}
+                            <label for="ProductSelect-option-{{ forloop.index0 }}">
+                              {{ option.name | escape }}
+                            </label>
+                            <select id="ProductSelect-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                              {%- for value in option.values -%}
+                                <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>
+                                  {{ value | escape }}
+                                </option>
+                              {%- endfor -%}
+                            </select>
+                          {%- endif -%}
+                      
+                        {%- endfor -%}
+                      {%- endunless -%}
+                      <p
+                        class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
+                        {{ block.shopify_attributes }}
+                        id="Inventory-{{ section.id }}"
+                        role="status"
+                      >
+                        {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+                          {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
+                            {%- if product.selected_or_first_available_variant.inventory_quantity <= block.settings.inventory_threshold -%}
+                              <svg width="15" height="15" aria-hidden="true">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(238,148,65, 0.3)"/>
+                                <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(238,148,65)"/>
+                              </svg>
+                              {%- if block.settings.show_inventory_quantity -%}
+                                {{- 'products.product.inventory_low_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity -}}
+                              {%- else -%}
+                                {{- 'products.product.inventory_low_stock' | t -}}
+                              {%- endif -%}
+                            {%- else -%}
+                              <svg width="15" height="15" aria-hidden="true">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
+                                <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
+                              </svg>
+                              {%- if block.settings.show_inventory_quantity -%}
+                                {{- 'products.product.inventory_in_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity -}}
+                              {%- else -%}
+                                  {{- 'products.product.inventory_in_stock' | t -}}
+                              {%- endif -%}
+                            {%- endif -%}
+                          {%- else -%}
+                            {%- if product.selected_or_first_available_variant.inventory_policy == 'continue' -%}
+                              <svg width="15" height="15" aria-hidden="true">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
+                                <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
+                              </svg>
+                              {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
+                            {%- else -%}
+                              <svg width="15" height="15" aria-hidden="true">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
+                                <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
+                              </svg>
+                              {{- 'products.product.inventory_out_of_stock' | t -}}
+                            {%- endif -%}
+                          {%- endif -%}
+                        {%- endif -%}
+                      </p>
+                    </div>
+                </div>
+                </modal-dialog>  
+           {% endfor %} {% endcomment %}
+        <h2>
+            MEET {{ product.title }}
+        </h2>
+    </div>
+    {% endfor %}   
+</div>
