@@ -1,5 +1,49 @@
 {
   "sections": {
+    "36e9c888-d91c-44d0-8684-aca347412a2a": {
+      "type": "custom-banner",
+      "blocks": {
+        "1941e1b6-f17f-4757-af4f-81893378e954": {
+          "type": "first-image",
+          "settings": {
+            "custom-banner-image-1": "shopify:\/\/shop_images\/collection_page_2048x_4254ad4f-983a-42ca-ba1f-b1a3756a5d5e.webp"
+          }
+        },
+        "9a684fe7-9c86-46c0-a7fb-248978df8219": {
+          "type": "second-image",
+          "settings": {
+            "custom-banner-image-2": "shopify:\/\/shop_images\/104A4040_1_2048x_dfe053ba-9a0a-416e-b3bf-114bc9a22327.jpg"
+          }
+        },
+        "f41014f7-d309-46c8-b090-b9c2f27753ce": {
+          "type": "third-image",
+          "settings": {
+            "custom-banner-image-3": "shopify:\/\/shop_images\/95I2729_2048x_2048x_da6c0b9c-0174-484c-b256-c8d01fb95131.jpg"
+          }
+        },
+        "a728cc98-230b-4cad-9dfe-25c73246d439": {
+          "type": "fourth-image",
+          "settings": {
+            "custom-banner-image-4": "shopify:\/\/shop_images\/1_1_Medium_2048x_68e904f0-96d8-4305-8496-46250e3dc5af.webp"
+          }
+        },
+        "9e3c6b5d-c5d0-49ab-8ec0-3604d1d6beb3": {
+          "type": "fifth-image",
+          "settings": {
+            "custom-banner-image-5": "shopify:\/\/shop_images\/untitled-139-12_2048x_42a85b9a-03a4-4ea6-997c-cef548a264ef.webp"
+          }
+        }
+      },
+      "block_order": [
+        "1941e1b6-f17f-4757-af4f-81893378e954",
+        "9a684fe7-9c86-46c0-a7fb-248978df8219",
+        "f41014f7-d309-46c8-b090-b9c2f27753ce",
+        "a728cc98-230b-4cad-9dfe-25c73246d439",
+        "9e3c6b5d-c5d0-49ab-8ec0-3604d1d6beb3"
+      ],
+      "settings": {
+      }
+    },
     "21ea890c-c208-45c4-95e2-9f5fece07bf6": {
       "type": "image-banner",
       "blocks": {
@@ -404,6 +448,7 @@
     }
   },
   "order": [
+    "36e9c888-d91c-44d0-8684-aca347412a2a",
     "21ea890c-c208-45c4-95e2-9f5fece07bf6",
     "9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0",
     "8012110d-c001-4aa9-ae59-9a0f122dc92a",
