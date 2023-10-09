@@ -15,6 +15,18 @@
           "settings": {
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "35ca7e96-9130-4d57-a517-8cc3ddc4e310": {
+          "type": "popup",
+          "settings": {
+            "text": "SIZE GUIDE",
+            "page": "{{ product.metafields.custom.size_guide.value }}"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -38,35 +50,23 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "35ca7e96-9130-4d57-a517-8cc3ddc4e310": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "{{ product.metafields.custom.size_guide.value }}"
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "description",
+        "35ca7e96-9130-4d57-a517-8cc3ddc4e310",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share",
-        "35ca7e96-9130-4d57-a517-8cc3ddc4e310"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
