@@ -65,8 +65,26 @@
     bottom: 100px;
     right: 0;
     display: none;
+    left:320px;
 }
 
 .card-wrapper:hover .product-collection__button{
     display: block;
+}
+.product-collection_title{
+     font-family: BlackDragon !important;
+     font-size:60px;
+     font-weight:500;
+     text-align: center;
+}
+.card__inner, .card__content{
+    width:80%;
+}
+.card__heading{
+    text-align:center;
+}
+.card__heading a{
+    font-family:GT-Haptik;
+    font-size:17px;
+    font-weight: 700;
 }

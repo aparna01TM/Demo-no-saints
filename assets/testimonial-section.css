@@ -14,6 +14,9 @@
 }
 .container-elementt p{
     text-align:center;
+    font-family:GT-Haptik;
+    font-size:17px;
+    color:black;
 }
 .testimonial-section-container{
     display:flex;
@@ -21,4 +24,28 @@
     align-items: center;
     width:1400px;
     margin: 0 auto;
+}
+#testimonial-section__heading{
+    font-family: BlackDragon;
+    font-weight: 500;
+    font-size: 90px;
+    text-align: center;
+    margin-top:60px;
+}
+#left-arrow, #right-arrow{
+    font-weight:700;
+    font-size:30px;
+}
+@media (max-width:1000px){
+    .testimonial-section-container{
+        width:100%
+    }
+    #left-arrow, #right-arrow{
+        margin:0 10px;
+    }
+}
+@media (max-width:700px){
+    #testimonial-section__heading{
+        font-size: 60px;
+    }
 }

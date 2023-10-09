@@ -4,6 +4,7 @@
     align-items: center;
     column-gap:100px;
     margin-top: 50px;
+    margin-top:60px;
 }
 .container-element{
     display: flex;
@@ -11,6 +12,18 @@
     align-items: center;
     justify-content: center;
 }
-/* .container-element p{
-    font-family: BlackDragon;
-} */
+.container-element p{
+    font-family: GT-Haptik;
+    font-size: 16px;
+    font-weight: 400;
+}
+@media (max-width:910px){
+    .section-container{
+        column-gap:10px;
+    }
+}
+@media (max-width:910px){
+    .section-container{
+        flex-direction: column;
+    }
+}

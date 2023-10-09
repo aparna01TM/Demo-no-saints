@@ -1637,7 +1637,8 @@ details[open] > .share-button__fallback {
 }
 
 .select__select {
-  font-family: var(--font-body-family);
+  /* font-family: var(--font-body-family); */
+  font-family:GT-Haptik;
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
@@ -1811,7 +1812,8 @@ details[open] > .share-button__fallback {
 /* Text area */
 
 .text-area {
-  font-family: var(--font-body-family);
+  /* font-family: var(--font-body-family); */
+  font-family:GT-Haptik;
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   min-height: 10rem;

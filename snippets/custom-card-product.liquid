@@ -142,7 +142,7 @@
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-              MEET {{ card_product.title | escape }}
+              {{ 'MEET' }} {{ card_product.title | escape }}
             </a>
           </h3>
           <div class="card-information">
@@ -206,7 +206,7 @@
                 assign qty_rules = true
               endif
             -%}
-            {%- if card_product.variants.size > 1 or qty_rules -%}
+            {%- if card_product.variants.size >= 0 or qty_rules -%}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button
                   id="{{ product_form_id }}-submit"

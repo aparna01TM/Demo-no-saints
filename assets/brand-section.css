@@ -4,3 +4,40 @@
     align-items: center;
     column-gap:50px;
 }
+.brand-section{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+}
+.brand-section h1{
+    font-family: BlackDragon;
+    font-size: 90px;
+    font-weight: 500;
+}
+@media (max-width:1000px){
+    .brand-section-container{
+        display: grid;
+        grid: repeat(2,1fr)/repeat(2,1fr);
+        grid-column-gap: 70px;
+        grid-row-gap: 40px;
+    } 
+    .brand-section h1{
+        font-size:70px;
+    }
+}
+@media (max-width:550px){
+    .brand-section-container{
+       display:flex;
+       flex-direction: column;
+    } 
+    .brand-section-container img{
+        width:150px;
+        height:50px;
+    }
+    .brand-section h1{
+        font-size:60px;
+    }
+}

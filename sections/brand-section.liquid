@@ -1,6 +1,13 @@
 {% schema %}
 {
     "name":"brand-section",
+    "settings":[
+      {
+        "type":"inline_richtext",
+        "id":"brand-section-heading",
+        "label":"Heading"
+      }
+    ],
     "blocks": [
         {
           "type": "first-brand",
@@ -59,25 +66,28 @@
     }
 {% endschema %}
 <link rel="stylesheet" href="{{ 'brand-section.css' | asset_url }}" media="print" onload="this.media='all'">
-<div class="brand-section-container">
-    {%- for block in section.blocks -%}
-        {%- case block.type -%}
-            {%- when 'first-brand'-%}
-            <div class="brand"> 
-                {{ block.settings.brand-section-image-1 | image_url: width: 200, height: 55 | image_tag }}
-            </div>
-            {%- when 'second-brand'-%}
-            <div class="brand"> 
-                {{ block.settings.brand-section-image-2 | image_url: width: 200, height: 44 | image_tag }}
-            </div>
-            {%- when 'third-brand'-%}
-            <div class="brand"> 
-                {{ block.settings.brand-section-image-3 | image_url: width: 200, height: 86 | image_tag }}
-            </div>
-            {%- when 'fourth-brand'-%}
-              <div class="brand"> 
-                  {{ block.settings.brand-section-image-4 | image_url: width: 200, height: 47 | image_tag }}
-              </div>
-        {%- endcase -%}
-    {%- endfor -%}
-</div>
+<div class="brand-section">
+    <h1>{{ section.settings.brand-section-heading }}</h1>
+    <div class="brand-section-container">
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'first-brand'-%}
+                <div class="brand"> 
+                    {{ block.settings.brand-section-image-1 | image_url: width: 200, height: 55 | image_tag }}
+                </div>
+                {%- when 'second-brand'-%}
+                <div class="brand"> 
+                    {{ block.settings.brand-section-image-2 | image_url: width: 200, height: 44 | image_tag }}
+                </div>
+                {%- when 'third-brand'-%}
+                <div class="brand"> 
+                    {{ block.settings.brand-section-image-3 | image_url: width: 200, height: 86 | image_tag }}
+                </div>
+                {%- when 'fourth-brand'-%}
+                  <div class="brand"> 
+                      {{ block.settings.brand-section-image-4 | image_url: width: 200, height: 47 | image_tag }}
+                  </div>
+            {%- endcase -%}
+        {%- endfor -%}
+    </div>
+  </div>

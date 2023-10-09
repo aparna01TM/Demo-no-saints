@@ -161,6 +161,10 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.multicolumn-heading{
+  font-family: GT-Haptik;
+  font-weight: 800;
+}
 
 @media screen and (max-width: 749px) {
   .background-none .slider .multicolumn-card__info {

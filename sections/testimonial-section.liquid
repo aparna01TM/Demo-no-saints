@@ -3,6 +3,13 @@
 {% schema %}
 {
     "name":"testimonial-section",
+    "settings":[
+        {
+            "type":"inline_richtext",
+            "id":"testimonial-section-heading",
+            "label":"Heading"
+        }
+    ],
     "blocks": [
         {
           "type": "review",
@@ -29,6 +36,7 @@
     }
 {% endschema %}
 <link rel="stylesheet" href="{{ 'testimonial-section.css' | asset_url }}" media="print" onload="this.media='all'">
+<h1 id ="testimonial-section__heading">{{ section.settings.testimonial-section-heading  }}</h1>
 <div class="testimonial-section-container">
 <div class="left-arrow" id="left-arrow">-</div>
     <div class="section-containerr"> 

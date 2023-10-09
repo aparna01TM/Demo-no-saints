@@ -4,9 +4,16 @@
     align-items: center;
     justify-content: center;
     row-gap:70px;
+    margin-top:60px;
 }
 .sponser-section-container h1{
     font-family: BlackDragon;
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 90px;
+    font-weight: 500;
+}
+@media (max-width:900px){
+    .sponser-section-container h1{
+        font-size: 60px;
+        text-align: center;
+    }
 }

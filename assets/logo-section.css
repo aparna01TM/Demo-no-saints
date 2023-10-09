@@ -3,4 +3,11 @@
     justify-content: center;
     align-items: center;
     column-gap:100px;
+    margin-top:50px;
+}
+@media (max-width:900px){
+    .logo-section-container{
+        flex-direction:column;
+        row-gap: 20px;
+    }
 }

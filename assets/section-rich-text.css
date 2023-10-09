@@ -16,7 +16,29 @@
 .rich-text__blocks {
   width: 100%;
 }
-
+.rich-text__heading{
+  font-family: GT-Haptik;
+  font-size:20px;
+  font-weight:100;
+  color:#000;
+}
+.rich-text__text{
+  font-family: GT-Haptik;
+  font-size:20px;
+  font-weight:100;
+  color:#000;
+  line-height: 25px;
+}
+.rich-text__buttons a{
+  font-family: GT-Haptik;
+  font-size:18px;
+  font-weight:100;
+  color:white;
+  background: #f40046;
+}
+.rich-text__buttons a:after{
+  box-shadow:none;
+}
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;
