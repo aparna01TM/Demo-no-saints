@@ -222,86 +222,6 @@
         "padding_bottom": 36
       }
     },
-    "207fccbc-d00a-44f4-bf49-7301ab13dd1e": {
-      "type": "brand-section",
-      "blocks": {
-        "0cb1d611-fde0-418b-9e89-abae85432c6b": {
-          "type": "first-brand",
-          "settings": {
-            "brand-section-image-1": "shopify:\/\/shop_images\/vogue-logo_1600x_ff3be8e1-fda7-4023-8fa9-089b0693a074.webp"
-          }
-        },
-        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b": {
-          "type": "second-brand",
-          "settings": {
-            "brand-section-image-2": "shopify:\/\/shop_images\/ICON_Logo_black_center-1_1600x_878701df-2ec3-418a-a310-54ded729a0d7.webp"
-          }
-        },
-        "690c13db-b280-46fa-8d41-f4e053c42e87": {
-          "type": "third-brand",
-          "settings": {
-            "brand-section-image-3": "shopify:\/\/shop_images\/file_1_1600x_8c3b3fa9-a4d1-4e88-b2c5-b03ef92ca4fa.webp"
-          }
-        },
-        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b": {
-          "type": "fourth-brand",
-          "settings": {
-            "brand-section-image-4": "shopify:\/\/shop_images\/cropped-vegconomist-often-misspelled-as-veconomist-the-vegan-business-magazine-logo_1600x_90490021-ef89-4736-bf22-e1edfc18276c.webp"
-          }
-        }
-      },
-      "block_order": [
-        "0cb1d611-fde0-418b-9e89-abae85432c6b",
-        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b",
-        "690c13db-b280-46fa-8d41-f4e053c42e87",
-        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b"
-      ],
-      "settings": {
-        "brand-section-heading": ""
-      }
-    },
-    "23b99064-18ec-4b84-8c9d-71abe79de947": {
-      "type": "sponser-section",
-      "blocks": {
-        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514": {
-          "type": "heading",
-          "settings": {
-            "sponser-section-heading": "Proud Sponser of"
-          }
-        },
-        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce": {
-          "type": "logo",
-          "settings": {
-            "sponser-section-logo": "shopify:\/\/shop_images\/Large-Badge-Black-_Transparent_1600x_520fca20-cdb5-4b49-a793-f59d7064c414.webp"
-          }
-        }
-      },
-      "block_order": [
-        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514",
-        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce"
-      ],
-      "settings": {
-      }
-    },
-    "169676746208aa0968": {
-      "type": "apps",
-      "blocks": {
-        "82dbeb09-b93f-4394-a1fc-a536c140c42d": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 27,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "82dbeb09-b93f-4394-a1fc-a536c140c42d"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "d246b7e4-40fc-4952-a158-aa958e40ceaf": {
       "type": "testimonial-section",
       "blocks": {
@@ -367,6 +287,86 @@
       "settings": {
         "testimonial-section-heading": "Testimonials"
       }
+    },
+    "207fccbc-d00a-44f4-bf49-7301ab13dd1e": {
+      "type": "brand-section",
+      "blocks": {
+        "0cb1d611-fde0-418b-9e89-abae85432c6b": {
+          "type": "first-brand",
+          "settings": {
+            "brand-section-image-1": "shopify:\/\/shop_images\/vogue-logo_1600x_ff3be8e1-fda7-4023-8fa9-089b0693a074.webp"
+          }
+        },
+        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b": {
+          "type": "second-brand",
+          "settings": {
+            "brand-section-image-2": "shopify:\/\/shop_images\/ICON_Logo_black_center-1_1600x_878701df-2ec3-418a-a310-54ded729a0d7.webp"
+          }
+        },
+        "690c13db-b280-46fa-8d41-f4e053c42e87": {
+          "type": "third-brand",
+          "settings": {
+            "brand-section-image-3": "shopify:\/\/shop_images\/file_1_1600x_8c3b3fa9-a4d1-4e88-b2c5-b03ef92ca4fa.webp"
+          }
+        },
+        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b": {
+          "type": "fourth-brand",
+          "settings": {
+            "brand-section-image-4": "shopify:\/\/shop_images\/cropped-vegconomist-often-misspelled-as-veconomist-the-vegan-business-magazine-logo_1600x_90490021-ef89-4736-bf22-e1edfc18276c.webp"
+          }
+        }
+      },
+      "block_order": [
+        "0cb1d611-fde0-418b-9e89-abae85432c6b",
+        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b",
+        "690c13db-b280-46fa-8d41-f4e053c42e87",
+        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b"
+      ],
+      "settings": {
+        "brand-section-heading": "As Seen On"
+      }
+    },
+    "23b99064-18ec-4b84-8c9d-71abe79de947": {
+      "type": "sponser-section",
+      "blocks": {
+        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514": {
+          "type": "heading",
+          "settings": {
+            "sponser-section-heading": "Proud Sponser of"
+          }
+        },
+        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce": {
+          "type": "logo",
+          "settings": {
+            "sponser-section-logo": "shopify:\/\/shop_images\/Large-Badge-Black-_Transparent_1600x_520fca20-cdb5-4b49-a793-f59d7064c414.webp"
+          }
+        }
+      },
+      "block_order": [
+        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514",
+        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce"
+      ],
+      "settings": {
+      }
+    },
+    "169676746208aa0968": {
+      "type": "apps",
+      "blocks": {
+        "82dbeb09-b93f-4394-a1fc-a536c140c42d": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 27,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "82dbeb09-b93f-4394-a1fc-a536c140c42d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -376,9 +376,9 @@
     "4ea109f9-536a-488b-b0ba-4fcd701ef980",
     "087dff34-9736-4464-8998-65df6c84535a",
     "ac76f8d6-8275-4388-aad5-fb85ffdeaf29",
+    "d246b7e4-40fc-4952-a158-aa958e40ceaf",
     "207fccbc-d00a-44f4-bf49-7301ab13dd1e",
     "23b99064-18ec-4b84-8c9d-71abe79de947",
-    "169676746208aa0968",
-    "d246b7e4-40fc-4952-a158-aa958e40ceaf"
+    "169676746208aa0968"
   ]
 }
