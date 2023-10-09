@@ -1,1 +1,345 @@
-{"sections":{"21ea890c-c208-45c4-95e2-9f5fece07bf6":{"type":"image-banner","blocks":{"template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-heading-1":{"type":"heading","settings":{"heading":"Image banner","heading_size":"h1"}},"template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-text-1":{"type":"text","settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-buttons-1":{"type":"buttons","settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-heading-1","template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-text-1","template--16820427030785__21ea890c-c208-45c4-95e2-9f5fece07bf6-buttons-1"],"settings":{"image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0":{"type":"rich-text","blocks":{"template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-heading-1":{"type":"heading","settings":{"heading":"WELCOME TO NO SAINTS","heading_size":"h1"}},"template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-text-1":{"type":"text","settings":{"text":"<p>Our sneakers are ethically made with premium materials, causing zero <br\/>harm to animals, people and the environment. You’ll feel incredible in <br\/>them, knowing you’re helping unf*ck the world. <\/p><p>Caring is the new sexy.<\/p>"}},"template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-button-1":{"type":"button","settings":{"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-heading-1","template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-text-1","template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-button-1"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"8012110d-c001-4aa9-ae59-9a0f122dc92a":{"type":"multicolumn","blocks":{"template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/St_Francis_1200x_1200x_8391299d-689b-426e-a9f1-2411eaec9fda.jpg","title":"ANIMAL FREE","text":"","link_label":"","link":""}},"template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Screen_Shot_2019-05-02_at_21.50.30_1200x_1200x_0e5ebe75-174b-4a4b-b28e-7414c5dbdec9.webp","title":"SUSTAINABLE MATERIALS","text":"","link_label":"","link":""}},"template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Hand_of_God_1200x_1200x_afffc5b1-c6c5-4be3-b1d2-617c83282aae.webp","title":"ETHICALLY MADE","text":"","link_label":"","link":""}}},"block_order":["template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-1","template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-2","template--16820427030785__8012110d-c001-4aa9-ae59-9a0f122dc92a-column-3"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"df14815a-f386-43fc-8b3f-5a0fd2561056":{"type":"collection-list","blocks":{"template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-1":{"type":"featured_collection","settings":{"collection":"meet-natalie"}},"template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-2":{"type":"featured_collection","settings":{"collection":"meet-caroline"}},"template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-3":{"type":"featured_collection","settings":{"collection":"meet-lewis"}},"1b6f7dbd-489b-4a05-9348-7b227985e382":{"type":"featured_collection","settings":{"collection":"meet-joaquin"}},"b888aa43-1988-4feb-b151-d3cc9d7b0d86":{"type":"featured_collection","settings":{"collection":"meet-ruby"}},"454273f2-e778-4798-ab4d-0ccdf559b87d":{"type":"featured_collection","settings":{"collection":"meet-natalie"}}},"block_order":["template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-1","template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-2","template--16820427030785__df14815a-f386-43fc-8b3f-5a0fd2561056-featured_collection-3","1b6f7dbd-489b-4a05-9348-7b227985e382","b888aa43-1988-4feb-b151-d3cc9d7b0d86","454273f2-e778-4798-ab4d-0ccdf559b87d"],"settings":{"title":"Collection","heading_size":"h1","image_ratio":"square","columns_desktop":3,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"0453154c-cffb-490f-8020-968f201eed33":{"type":"multicolumn","blocks":{"template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/AP-RGB-black-lg_4x-100_1600x_400x_e8b3c427-32ea-48a2-88ca-4939623ea986.png","title":"","text":"","link_label":"","link":""}},"template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Screen_Shot_2019-07-14_at_23.04.25_400x_400x_82f7d2d2-3881-46b9-9662-a8b46471694e.png","title":"","text":"","link_label":"","link":""}},"template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Full_Logo_Black_1600x_400x_bd950fcf-14e7-469a-9f19-bac19eb5f383.png","title":"","text":"","link_label":"","link":""}}},"block_order":["template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-1","template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-2","template--16820427030785__0453154c-cffb-490f-8020-968f201eed33-column-3"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"ac76f8d6-8275-4388-aad5-fb85ffdeaf29":{"type":"multicolumn","blocks":{"template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/imgpsh_fullsize_anim_2_Medium_2048x_87721bfd-5eb3-49f9-9fde-b8df9ee4228a.webp","title":"ABOUT US","text":"","link_label":"","link":""}},"template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/40I0636_Medium_2048x_008b3afb-244f-4e1f-ad78-8e18982fea23.webp","title":"ABOUT OUR SHOES","text":"","link_label":"","link":""}}},"block_order":["template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-1","template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-2"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"portrait","columns_desktop":2,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"8ed5c519-2ebb-4929-bc3c-1e66becf0e87":{"type":"multicolumn","blocks":{"template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/vogue-logo_1600x_ff3be8e1-fda7-4023-8fa9-089b0693a074.webp","title":"","text":"","link_label":"","link":""}},"template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/ICON_Logo_black_center-1_1600x_878701df-2ec3-418a-a310-54ded729a0d7.webp","title":"","text":"","link_label":"","link":""}},"template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/file_1_1600x_8c3b3fa9-a4d1-4e88-b2c5-b03ef92ca4fa.webp","title":"","text":"","link_label":"","link":""}},"f9164e74-1255-4604-89fc-a77216192758":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/cropped-vegconomist-often-misspelled-as-veconomist-the-vegan-business-magazine-logo_1600x_90490021-ef89-4736-bf22-e1edfc18276c.webp","title":"","text":"","link_label":"","link":""}}},"block_order":["template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-1","template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-2","template--16820427030785__8ed5c519-2ebb-4929-bc3c-1e66becf0e87-column-3","f9164e74-1255-4604-89fc-a77216192758"],"settings":{"title":"AS SEEN ON","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["21ea890c-c208-45c4-95e2-9f5fece07bf6","9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0","8012110d-c001-4aa9-ae59-9a0f122dc92a","df14815a-f386-43fc-8b3f-5a0fd2561056","0453154c-cffb-490f-8020-968f201eed33","ac76f8d6-8275-4388-aad5-fb85ffdeaf29","8ed5c519-2ebb-4929-bc3c-1e66becf0e87"]}
+{
+  "sections": {
+    "36e9c888-d91c-44d0-8684-aca347412a2a": {
+      "type": "custom-banner",
+      "blocks": {
+        "1941e1b6-f17f-4757-af4f-81893378e954": {
+          "type": "first-image",
+          "settings": {
+            "custom-banner-image-1": "shopify:\/\/shop_images\/collection_page_2048x_4254ad4f-983a-42ca-ba1f-b1a3756a5d5e.webp"
+          }
+        },
+        "9a684fe7-9c86-46c0-a7fb-248978df8219": {
+          "type": "second-image",
+          "settings": {
+            "custom-banner-image-2": "shopify:\/\/shop_images\/104A4040_1_2048x_dfe053ba-9a0a-416e-b3bf-114bc9a22327.jpg"
+          }
+        },
+        "f41014f7-d309-46c8-b090-b9c2f27753ce": {
+          "type": "third-image",
+          "settings": {
+            "custom-banner-image-3": "shopify:\/\/shop_images\/95I2729_2048x_2048x_da6c0b9c-0174-484c-b256-c8d01fb95131.jpg"
+          }
+        },
+        "a728cc98-230b-4cad-9dfe-25c73246d439": {
+          "type": "fourth-image",
+          "settings": {
+            "custom-banner-image-4": "shopify:\/\/shop_images\/1_1_Medium_2048x_68e904f0-96d8-4305-8496-46250e3dc5af.webp"
+          }
+        },
+        "9e3c6b5d-c5d0-49ab-8ec0-3604d1d6beb3": {
+          "type": "fifth-image",
+          "settings": {
+            "custom-banner-image-5": "shopify:\/\/shop_images\/untitled-139-12_2048x_42a85b9a-03a4-4ea6-997c-cef548a264ef.webp"
+          }
+        }
+      },
+      "block_order": [
+        "1941e1b6-f17f-4757-af4f-81893378e954",
+        "9a684fe7-9c86-46c0-a7fb-248978df8219",
+        "f41014f7-d309-46c8-b090-b9c2f27753ce",
+        "a728cc98-230b-4cad-9dfe-25c73246d439",
+        "9e3c6b5d-c5d0-49ab-8ec0-3604d1d6beb3"
+      ],
+      "settings": {
+      }
+    },
+    "9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELCOME TO NO SAINTS",
+            "heading_size": "h1"
+          }
+        },
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sneakers are ethically made with premium materials, causing zero <br\/>harm to animals, people and the environment. You’ll feel incredible in <br\/>them, knowing you’re helping unf*ck the world. <\/p><p>Caring is the new sexy.<\/p>"
+          }
+        },
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-heading-1",
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-text-1",
+        "template--16820427030785__9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "30203a21-5547-4ea9-8676-0a2f0a440fa9": {
+      "type": "custom-section",
+      "blocks": {
+        "74ed54d1-ac7c-48a4-ac0f-5573ad4ea108": {
+          "type": "first-image",
+          "settings": {
+            "custom-section-image-1": "shopify:\/\/shop_images\/St_Francis_1200x_1200x_8391299d-689b-426e-a9f1-2411eaec9fda.jpg",
+            "custom-section-text-1": "ANIMAL FREE"
+          }
+        },
+        "6dbf9c39-86b0-4456-9c06-e192cca902e3": {
+          "type": "second-image",
+          "settings": {
+            "custom-section-image-2": "shopify:\/\/shop_images\/Screen_Shot_2019-05-02_at_21.50.30_1200x_1200x_0e5ebe75-174b-4a4b-b28e-7414c5dbdec9.webp",
+            "custom-section-text-2": "SUSTAINABLE MATERIALS"
+          }
+        },
+        "f430275a-de1f-49ef-a661-54815cdbe919": {
+          "type": "third-image",
+          "settings": {
+            "custom-section-image-3": "shopify:\/\/shop_images\/Hand_of_God_1200x_1200x_5b38b694-bebb-44fe-b773-aadb87d1a7be.webp",
+            "custom-section-text-3": "ETHICALLY MADE"
+          }
+        }
+      },
+      "block_order": [
+        "74ed54d1-ac7c-48a4-ac0f-5573ad4ea108",
+        "6dbf9c39-86b0-4456-9c06-e192cca902e3",
+        "f430275a-de1f-49ef-a661-54815cdbe919"
+      ],
+      "settings": {
+      }
+    },
+    "087dff34-9736-4464-8998-65df6c84535a": {
+      "type": "logo-section",
+      "blocks": {
+        "8f40cc47-67ec-4eac-a370-5a050dafab8b": {
+          "type": "first-logo",
+          "settings": {
+            "logo-section-image-1": "shopify:\/\/shop_images\/AP-RGB-black-lg_4x-100_1600x_400x_e8b3c427-32ea-48a2-88ca-4939623ea986.png"
+          }
+        },
+        "adde2db1-f60d-4181-80de-a3261885a827": {
+          "type": "second-logo",
+          "settings": {
+            "logo-section-image-2": "shopify:\/\/shop_images\/Screen_Shot_2019-07-14_at_23.04.25_400x_400x_82f7d2d2-3881-46b9-9662-a8b46471694e.png"
+          }
+        },
+        "d87e1a26-ebcb-4ee9-a929-f8b94bba6c00": {
+          "type": "third-logo",
+          "settings": {
+            "logo-section-image-3": "shopify:\/\/shop_images\/Full_Logo_Black_1600x_400x_bd950fcf-14e7-469a-9f19-bac19eb5f383.png"
+          }
+        }
+      },
+      "block_order": [
+        "8f40cc47-67ec-4eac-a370-5a050dafab8b",
+        "adde2db1-f60d-4181-80de-a3261885a827",
+        "d87e1a26-ebcb-4ee9-a929-f8b94bba6c00"
+      ],
+      "settings": {
+      }
+    },
+    "ac76f8d6-8275-4388-aad5-fb85ffdeaf29": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_2_Medium_2048x_87721bfd-5eb3-49f9-9fde-b8df9ee4228a.webp",
+            "title": "ABOUT US",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/40I0636_Medium_2048x_008b3afb-244f-4e1f-ad78-8e18982fea23.webp",
+            "title": "ABOUT OUR SHOES",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-1",
+        "template--16820427030785__ac76f8d6-8275-4388-aad5-fb85ffdeaf29-column-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "207fccbc-d00a-44f4-bf49-7301ab13dd1e": {
+      "type": "brand-section",
+      "blocks": {
+        "0cb1d611-fde0-418b-9e89-abae85432c6b": {
+          "type": "first-brand",
+          "settings": {
+            "brand-section-image-1": "shopify:\/\/shop_images\/vogue-logo_1600x_ff3be8e1-fda7-4023-8fa9-089b0693a074.webp"
+          }
+        },
+        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b": {
+          "type": "second-brand",
+          "settings": {
+            "brand-section-image-2": "shopify:\/\/shop_images\/ICON_Logo_black_center-1_1600x_878701df-2ec3-418a-a310-54ded729a0d7.webp"
+          }
+        },
+        "690c13db-b280-46fa-8d41-f4e053c42e87": {
+          "type": "third-brand",
+          "settings": {
+            "brand-section-image-3": "shopify:\/\/shop_images\/file_1_1600x_8c3b3fa9-a4d1-4e88-b2c5-b03ef92ca4fa.webp"
+          }
+        },
+        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b": {
+          "type": "fourth-brand",
+          "settings": {
+            "brand-section-image-4": "shopify:\/\/shop_images\/cropped-vegconomist-often-misspelled-as-veconomist-the-vegan-business-magazine-logo_1600x_90490021-ef89-4736-bf22-e1edfc18276c.webp"
+          }
+        }
+      },
+      "block_order": [
+        "0cb1d611-fde0-418b-9e89-abae85432c6b",
+        "ec2701f3-ef5d-40b1-a5eb-37c5033c823b",
+        "690c13db-b280-46fa-8d41-f4e053c42e87",
+        "3ff161eb-f2eb-44a4-8825-42e81c35ef1b"
+      ],
+      "settings": {
+      }
+    },
+    "23b99064-18ec-4b84-8c9d-71abe79de947": {
+      "type": "sponser-section",
+      "blocks": {
+        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514": {
+          "type": "heading",
+          "settings": {
+            "sponser-section-heading": "Proud Sponser of"
+          }
+        },
+        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce": {
+          "type": "logo",
+          "settings": {
+            "sponser-section-logo": "shopify:\/\/shop_images\/Large-Badge-Black-_Transparent_1600x_520fca20-cdb5-4b49-a793-f59d7064c414.webp"
+          }
+        }
+      },
+      "block_order": [
+        "86c05fb4-1fde-41e4-95b4-2d2c4b28f514",
+        "5d69dfaf-fbb8-438c-b159-6a21faaaa2ce"
+      ],
+      "settings": {
+      }
+    },
+    "169676746208aa0968": {
+      "type": "apps",
+      "blocks": {
+        "82dbeb09-b93f-4394-a1fc-a536c140c42d": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 27,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "82dbeb09-b93f-4394-a1fc-a536c140c42d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "b5705db8-5512-407f-adc0-b58c1a8fc06e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "275fcbab-79c0-4644-b4aa-4a9e06ca6e74": {
+      "type": "product-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "36e9c888-d91c-44d0-8684-aca347412a2a",
+    "9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0",
+    "30203a21-5547-4ea9-8676-0a2f0a440fa9",
+    "087dff34-9736-4464-8998-65df6c84535a",
+    "ac76f8d6-8275-4388-aad5-fb85ffdeaf29",
+    "207fccbc-d00a-44f4-bf49-7301ab13dd1e",
+    "23b99064-18ec-4b84-8c9d-71abe79de947",
+    "169676746208aa0968",
+    "b5705db8-5512-407f-adc0-b58c1a8fc06e",
+    "275fcbab-79c0-4644-b4aa-4a9e06ca6e74"
+  ]
+}
