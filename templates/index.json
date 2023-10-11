@@ -370,6 +370,31 @@
     },
     "0fd1e295-e2b0-4aa5-bc52-e6283c92fa95": {
       "type": "custom-product-collection",
+      "blocks": {
+        "0e17ba73-3ab3-4aec-a01b-495ff426ea5d": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "d210da02-5d19-4d03-b1ad-adc1f085af4b": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "43295f55-f90d-4463-a9a6-1160692aa3c1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      },
+      "block_order": [
+        "0e17ba73-3ab3-4aec-a01b-495ff426ea5d",
+        "d210da02-5d19-4d03-b1ad-adc1f085af4b",
+        "43295f55-f90d-4463-a9a6-1160692aa3c1"
+      ],
       "settings": {
         "heading": "Collection",
         "collection": "frontpage",
