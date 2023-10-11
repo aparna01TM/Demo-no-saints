@@ -119,6 +119,34 @@
       "settings": {
       }
     },
+    "4ea109f9-536a-488b-b0ba-4fcd701ef980": {
+      "type": "product-collection",
+      "settings": {
+        "title": "Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "087dff34-9736-4464-8998-65df6c84535a": {
       "type": "logo-section",
       "blocks": {
@@ -194,6 +222,72 @@
         "padding_bottom": 36
       }
     },
+    "d246b7e4-40fc-4952-a158-aa958e40ceaf": {
+      "type": "testimonial-section",
+      "blocks": {
+        "fe9df114-0757-4b86-bab6-9d160f744088": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"I gave mine a solid working out - covered over 30km in them in a weekend and they felt great. So much better than my old leather sneakers, which took forever to break in\"",
+            "testimonial-section-author": "_PAUL K."
+          }
+        },
+        "f3d300ff-a40b-447e-846b-6e8ed56481a6": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"I have two pairs and I couldn't be happier with them! They're everything I could ever want in a pair of sneakers. Great customer service, would highly recommend\"",
+            "testimonial-section-author": "_ALEHA P."
+          }
+        },
+        "fa356d7d-ddff-4966-8123-1bdf07964bb5": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"Now onto my third pair of No Saints and couldn’t be happier with them. As comfortable, durable and aesthetic pleasing as any leather shoes but without the dead animals. Highly recommend!\"",
+            "testimonial-section-author": "_LUCAS G."
+          }
+        },
+        "b8a6a42e-b483-4058-88f4-cec2ed7c7c78": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"I wore my NS for 80% of a 3 week trip through desert, beach, Coachella, doing farm work etc. and they are extremely hardy. Cleaned with water and a tissue and all fine. Got heaps of good comments on them\"",
+            "testimonial-section-author": "_NICK H."
+          }
+        },
+        "8ea19707-2c4d-46d3-81bf-6ac50f05deca": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"These shoes are amazing!!! Not only are they crazy comfortable, but they scrub up in two seconds and look brand new!!! All it took were a few kitchen wipes and they are sparkling white again. Can not recommend these enough\"",
+            "testimonial-section-author": "_DEMELZA H."
+          }
+        },
+        "4c6fc966-c805-403c-9a75-b7212c5a58fd": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"Love my No Saints so much I bought a second pair. Super comfortable, stylish, and regardless of the occasion can wear them on the weekend or to the office\"",
+            "testimonial-section-author": "_DOUG L."
+          }
+        },
+        "aac49c47-4841-4052-9ba1-ad51ef0dc0bc": {
+          "type": "review",
+          "settings": {
+            "testimonial-section-review": "\"These shoes are not only gorgeous (people stop me all the time to ask me where I got my gold pair from), but they are also super comfy and easy to clean. These are statement shoes that you can wear with practically everything. I put then on and, voilà, feel 100% more cool\"",
+            "testimonial-section-author": "_HELENA P."
+          }
+        }
+      },
+      "block_order": [
+        "fe9df114-0757-4b86-bab6-9d160f744088",
+        "f3d300ff-a40b-447e-846b-6e8ed56481a6",
+        "fa356d7d-ddff-4966-8123-1bdf07964bb5",
+        "b8a6a42e-b483-4058-88f4-cec2ed7c7c78",
+        "8ea19707-2c4d-46d3-81bf-6ac50f05deca",
+        "4c6fc966-c805-403c-9a75-b7212c5a58fd",
+        "aac49c47-4841-4052-9ba1-ad51ef0dc0bc"
+      ],
+      "settings": {
+        "testimonial-section-heading": "Testimonials"
+      }
+    },
     "207fccbc-d00a-44f4-bf49-7301ab13dd1e": {
       "type": "brand-section",
       "blocks": {
@@ -229,6 +323,7 @@
         "3ff161eb-f2eb-44a4-8825-42e81c35ef1b"
       ],
       "settings": {
+        "brand-section-heading": "As Seen On"
       }
     },
     "23b99064-18ec-4b84-8c9d-71abe79de947": {
@@ -272,74 +367,18 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "b5705db8-5512-407f-adc0-b58c1a8fc06e": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "275fcbab-79c0-4644-b4aa-4a9e06ca6e74": {
-      "type": "product-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "36e9c888-d91c-44d0-8684-aca347412a2a",
     "9b5d84e2-1bcf-40af-9b33-e485bb9e3ba0",
     "30203a21-5547-4ea9-8676-0a2f0a440fa9",
+    "4ea109f9-536a-488b-b0ba-4fcd701ef980",
     "087dff34-9736-4464-8998-65df6c84535a",
     "ac76f8d6-8275-4388-aad5-fb85ffdeaf29",
+    "d246b7e4-40fc-4952-a158-aa958e40ceaf",
     "207fccbc-d00a-44f4-bf49-7301ab13dd1e",
     "23b99064-18ec-4b84-8c9d-71abe79de947",
-    "169676746208aa0968",
-    "b5705db8-5512-407f-adc0-b58c1a8fc06e",
-    "275fcbab-79c0-4644-b4aa-4a9e06ca6e74"
+    "169676746208aa0968"
   ]
 }
