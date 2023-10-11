@@ -367,6 +367,15 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "0fd1e295-e2b0-4aa5-bc52-e6283c92fa95": {
+      "type": "custom-product-collection",
+      "settings": {
+        "heading": "Collection",
+        "collection": "frontpage",
+        "inventory_threshold": 10,
+        "show_inventory_quantity": true
+      }
     }
   },
   "order": [
@@ -379,6 +388,7 @@
     "d246b7e4-40fc-4952-a158-aa958e40ceaf",
     "207fccbc-d00a-44f4-bf49-7301ab13dd1e",
     "23b99064-18ec-4b84-8c9d-71abe79de947",
-    "169676746208aa0968"
+    "169676746208aa0968",
+    "0fd1e295-e2b0-4aa5-bc52-e6283c92fa95"
   ]
 }
