@@ -1,0 +1,208 @@
+{{ 'quickview-modal.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'custom-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name":"product-collection",
+    "settings":[
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured-collection.settings.collection.label"
+         },
+         {
+          "type": "range",
+          "id": "inventory_threshold",
+          "label": "t:sections.main-product.blocks.inventory.settings.inventory_threshold.label",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "info": "t:sections.main-product.blocks.inventory.settings.inventory_threshold.info",
+          "default": 10
+        },
+        {
+          "type": "checkbox",
+          "id": "show_inventory_quantity",
+          "label": "t:sections.main-product.blocks.inventory.settings.show_inventory_quantity.label",
+          "default": true
+        }
+    ],
+    "blocks":[
+      {
+        "type": "buy_buttons",
+        "name": "t:sections.main-product.blocks.buy_buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_dynamic_checkout",
+            "default": true,
+            "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
+            "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_gift_card_recipient",
+            "default": true,
+            "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
+            "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+          }
+        ]
+      },
+      {
+        "type": "quantity_selector",
+        "name": "t:sections.main-product.blocks.quantity_selector.name",
+        "limit": 1
+      },
+      {
+        "type": "price",
+        "name": "t:sections.main-product.blocks.price.name",
+        "limit": 1
+      },
+      {
+        "type": "variant_picker",
+        "name": "t:sections.main-product.blocks.variant_picker.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "select",
+            "id": "picker_type",
+            "options": [
+              {
+                "value": "dropdown",
+                "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__1.label"
+              },
+              {
+                "value": "button",
+                "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+              }
+            ],
+            "default": "button",
+            "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+          }
+        ]
+      }
+    ],
+    "presets":[
+        {
+            "name":"product-collection"
+        }
+    ]
+}
+{% endschema %}
+<h1 class="custom-product-collection__heading">{{ section.settings.heading }}</h1>
+<div class="product-collection-container">
+    {%- for product in section.settings.collection.products limit: 6 -%}
+     <div class="product-collection">
+        <a href="{{product.url}}">
+        {{ product.featured_media | image_url: width: 266 | image_tag }}
+        </a>
+        <button class="popupbutton">
+            +
+        </button>
+        <div id="overlay"></div>
+        <dialog open class="quickview-modal">
+          <button type=button class="close-button">x</button>
+            <div class ="modal-content">
+              {{ product.featured_media | image_url: width: 550, height: 550 | image_tag }}
+              <div id="product-details">
+                <h2><a href= {{product.url}}>{{ product.title }}</a></h2>
+                <p>{{ product.price | money_with_currency }}</p>
+                <variant-selects
+                  id="variant-selects-{{ section.id }}"
+                  class="no-js-hidden"
+                  data-section="{{ section.id }}"
+                  data-url="{{ product.url }}"
+                  {% if update_url == false %}
+                    data-update-url="false"
+                  {% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                <label>
+                  Size
+                  <select>
+                    {%- for value in product.options_by_name['size'].values %}
+                    <option>{{ value }}</option>
+                    {%- endfor %}
+                  </select>
+                </label>
+                <script type="application/json">
+                  {{ product.variants | json }}
+                </script>
+              </variant-selects>
+               {%- assign product_form_id = 'product-form-' | append: section.id -%}
+               {% for block in section.blocks %}
+                {% case block.type %}
+               {%- when 'buy_buttons' -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+               {% endcase %}
+              {% endfor %}
+              <div class="product-description">{{ product.description | strip_html | truncatewords: 20 }}</div>
+              <a href="{{ product.url }}" id="fulldetails">View full product details</a>
+              </div>
+            </div>
+          </dialog>
+        <a href={{product.url}}>
+        <h2>
+            MEET {{ product.title }}
+        </h2>
+        </a>
+    </div>
+    {% endfor %}   
+</div>
+{% comment %} {% style %}
+ body.modal-open{
+  overflow:hidden;
+ }
+.quickview-modal{
+  display:none;
+  position:fixed;
+  top:18%;
+  border: none;
+  width: 45%;
+  box-shadow: 1px 1px 11px 1px grey;
+  margin:0 auto;
+  z-index:106;
+}
+#product-details{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#overlay{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.3);
+  z-index:105;
+}
+#product-form__buttons{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+}
+.modal-content{
+  display:flex;
+  align-items:flex-start !important;
+}
+#fulldetails{
+  margin-top:30px;
+}
+{% endstyle %} {% endcomment %}

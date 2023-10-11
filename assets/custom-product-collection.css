@@ -88,3 +88,21 @@
     font-size:17px;
     font-weight: 700;
 }
+@media (max-width:1440px){
+    .product-collection-container{
+        width:100%;
+    }
+}
+@media(max-width:989px){
+    .product-collection-container{
+        display:grid;
+        grid: repeat(3,1fr)/repeat(2,1fr);
+    }
+
+}
+@media (max-width:750px){
+    .product-collection a img{
+        width: 85%;
+        height: 85%;
+    }
+}

@@ -1,0 +1,125 @@
+.product-collection-container{
+    display:grid;
+    grid: repeat(2,1fr)/repeat(3,1fr);
+    margin:0 auto;
+    width:1400px;
+}
+.product-collection{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product-collection div{
+    display:flex;
+    align-items: flex-end;
+}
+.product-collection a{
+    text-decoration: none;
+    color: black;
+}
+
+.popupbutton{
+    display:none;
+    position: absolute;
+    right:15%;
+    top:60%;
+    border:1px solid black;
+    border-radius:50%;
+    padding:0px 15px;
+    background-color: white;
+    font-size: 50px;
+    cursor:pointer;
+}
+
+.product-collection:hover .popupbutton{
+    display: block;
+}
+.product-collection_title{
+     font-family: BlackDragon !important;
+     font-size:60px;
+     font-weight:500;
+     text-align: center;
+}
+.card__inner, .card__content{
+    width:80%;
+}
+.card__heading{
+    text-align:center;
+}
+.card__heading a{
+    font-family:GT-Haptik;
+    font-size:17px;
+    font-weight: 700;
+}
+body.modal-open{
+    overflow:hidden;
+   }
+  .quickview-modal{
+    display:none;
+    position:fixed;
+    top:18%;
+    border: none;
+    width: 45%;
+    box-shadow: 1px 1px 11px 1px grey;
+    margin:0 auto;
+    z-index:106;
+  }
+  #product-details{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+    z-index:105;
+  }
+  #product-form__buttons{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+  }
+  .modal-content{
+    display:flex;
+    align-items:flex-start !important;
+  }
+  #fulldetails{
+    margin-top:30px;
+  }
+  .product-description{
+    margin-top: 20px;
+  }
+  .custom-product-collection__heading{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 500;
+    font-family: BlackDragon;
+  }
+@media (max-width:1440px){
+    .product-collection-container{
+        width:100%;
+    }
+}
+@media(max-width:989px){
+    .product-collection-container{
+        display:grid;
+        grid: repeat(3,1fr)/repeat(2,1fr);
+    }
+
+}
+@media (max-width:750px){
+    .product-collection a img{
+        width: 85%;
+        height: 85%;
+    }
+    .custom-product-collection__heading{
+        font-size:50px;
+    }
+}

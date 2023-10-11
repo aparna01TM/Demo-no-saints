@@ -1,0 +1,58 @@
+{% schema %}{
+    "name":"test-modal",
+    "settings":[
+        {
+            "type":"collection",
+            "id":"collection",
+            "label":"t:sections.featured-collection.settings.collection.label"
+        }
+    ],
+    "presets":[
+        {
+            "name":"test-modal"
+        }
+    ]
+}
+{% endschema %}
+<script src="{{ 'test-modal.js' | asset_url }}" defer="defer"></script>
+{%- for product in section.settings.collection.products limit: 6 -%}
+    <div class="custom-product-section">
+        <div class="product-image">
+            {{ product.featured_media | image_url: width: 550, height: 550 | image_tag }}
+        </div>
+        <div class="product-details">
+            <h2>{{ product.title }}</h2>
+            <p class="product-price">{{ product.price | money }}</p>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id= "quantity" name="quantity" value="1" min="1">
+
+            <label for="variant">Select Variant:</label>
+            <select id="variant" name="variant">
+                {% for variant in product.variants %}
+                    <option value="{{variant.id}}">{{variant.title}}</option>
+                {% endfor %}
+            </select>
+
+            <button id="add-to-cart">Add to Cart</button>
+            <button id="buy-now">Buy Now</button>
+            
+        </div>
+    </div>
+{%- endfor -%}
+
+{% style %}
+.custom-product-section{
+    display:flex;
+    align-items:center;
+}
+.product-image{
+    flex:1;
+    padding:20px;
+}
+.product-details{
+    flex:2;
+    padding:20px;
+}
+{% endstyle %}
+

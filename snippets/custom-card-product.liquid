@@ -115,15 +115,17 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- elsif card_product.tags.size > 0 -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-              >
-                {% comment %} {% for tag in card_product.tags %}
-                  {{ tag }}
-                {% endfor %} {% endcomment %}
-                {{ card_product.tags[0] }}
-              </span>
+                {% for tag in card_product.tags %}
+                  {%- if tag contains 'badge' -%}
+                    <span
+                      id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                      class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                    >
+                      {{ tag | remove: 'badge-' }}
+                    </span>
+                  {%- endif -%}
+                {% endfor %}
+                {% comment %} {{ card_product.tags[0] }} {% endcomment %}
             {%- endif -%}
           </div>
         </div>
