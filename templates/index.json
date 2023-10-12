@@ -163,6 +163,31 @@
     },
     "087dff34-9736-4464-8998-65df6c84535a": {
       "type": "logo-section",
+      "blocks": {
+        "7a533812-17d7-44fe-a3af-8aec4135f7ea": {
+          "type": "logo",
+          "settings": {
+            "logo-section-image": "shopify:\/\/shop_images\/AP-RGB-black-lg_4x-100_1600x_400x_e8b3c427-32ea-48a2-88ca-4939623ea986.png"
+          }
+        },
+        "7ea753c2-e6a6-4be2-bbf0-199a01254bbc": {
+          "type": "logo",
+          "settings": {
+            "logo-section-image": "shopify:\/\/shop_images\/Screen_Shot_2019-07-14_at_23.04.25_400x_400x_82f7d2d2-3881-46b9-9662-a8b46471694e.png"
+          }
+        },
+        "76377c7c-78f6-4241-a4e6-d0c4be969964": {
+          "type": "logo",
+          "settings": {
+            "logo-section-image": "shopify:\/\/shop_images\/Full_Logo_Black_1600x_400x_bd950fcf-14e7-469a-9f19-bac19eb5f383.png"
+          }
+        }
+      },
+      "block_order": [
+        "7a533812-17d7-44fe-a3af-8aec4135f7ea",
+        "7ea753c2-e6a6-4be2-bbf0-199a01254bbc",
+        "76377c7c-78f6-4241-a4e6-d0c4be969964"
+      ],
       "settings": {
       }
     },
@@ -279,6 +304,38 @@
     },
     "207fccbc-d00a-44f4-bf49-7301ab13dd1e": {
       "type": "brand-section",
+      "blocks": {
+        "1457afee-70a9-4408-9a85-39be7a3c107a": {
+          "type": "brand",
+          "settings": {
+            "brand-section-image": "shopify:\/\/shop_images\/vogue-logo_1600x_ff3be8e1-fda7-4023-8fa9-089b0693a074.webp"
+          }
+        },
+        "72e8c1af-ffbb-4da5-9e4c-3fa837ab2ed7": {
+          "type": "brand",
+          "settings": {
+            "brand-section-image": "shopify:\/\/shop_images\/ICON_Logo_black_center-1_1600x_878701df-2ec3-418a-a310-54ded729a0d7.webp"
+          }
+        },
+        "6a502ec8-45ad-4370-9d7a-2039d5d704dd": {
+          "type": "brand",
+          "settings": {
+            "brand-section-image": "shopify:\/\/shop_images\/file_1_1600x_8c3b3fa9-a4d1-4e88-b2c5-b03ef92ca4fa.webp"
+          }
+        },
+        "c56b9003-9eeb-4077-bf19-f9ac922f335f": {
+          "type": "brand",
+          "settings": {
+            "brand-section-image": "shopify:\/\/shop_images\/cropped-vegconomist-often-misspelled-as-veconomist-the-vegan-business-magazine-logo_1600x_90490021-ef89-4736-bf22-e1edfc18276c.webp"
+          }
+        }
+      },
+      "block_order": [
+        "1457afee-70a9-4408-9a85-39be7a3c107a",
+        "72e8c1af-ffbb-4da5-9e4c-3fa837ab2ed7",
+        "6a502ec8-45ad-4370-9d7a-2039d5d704dd",
+        "c56b9003-9eeb-4077-bf19-f9ac922f335f"
+      ],
       "settings": {
         "brand-section-heading": "As Seen On"
       }
