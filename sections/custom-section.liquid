@@ -1,58 +1,36 @@
+{{ 'custom-section.css' | asset_url | stylesheet_tag }}
+<div class="section-container">
+    {%- for block in section.blocks -%}
+            <div class="container-element">
+                <div>
+                    {{ block.settings.custom-section-image | image_url: width: 180, height: 180 | image_tag }}
+                </div>
+                <p>
+                    {{ block.settings.custom-section-text }}
+                </p>
+            </div>
+    {%- endfor -%}
+</div>
 {% schema %}
 {
     "name":"custom-section",
     "blocks": [
         {
-          "type": "first-image",
-          "name": "First Image",
-          "limit": 1,
+          "type": "image",
+          "name": "Image",
           "settings": [
             {
               "type": "image_picker",
-              "id": "custom-section-image-1",
-              "label": "First Image"
+              "id": "custom-section-image",
+              "label": "Image"
             },
             {
                 "type": "text",
-                "id": "custom-section-text-1",
-                "label": "First Image"
+                "id": "custom-section-text",
+                "label": "Image Text"
             }
           ]
-        },
-        {
-            "type": "second-image",
-            "name": "Second Image",
-            "limit": 1,
-            "settings": [
-              {
-                "type": "image_picker",
-                "id": "custom-section-image-2",
-                "label": "Second Image"
-              },
-              {
-                "type": "text",
-                "id": "custom-section-text-2",
-                "label": "First Image"
-              }
-            ]
-          },
-          {
-            "type": "third-image",
-            "name": "Third Image",
-            "limit": 1,
-            "settings": [
-              {
-                "type": "image_picker",
-                "id": "custom-section-image-3",
-                "label": "Third Image"
-              },
-              {
-                "type": "text",
-                "id": "custom-section-text-3",
-                "label": "First Image"
-              }
-            ]
-          }
+        }
     ],
     "presets": [
             {
@@ -61,37 +39,3 @@
         ]
     }
 {% endschema %}
-<link rel="stylesheet" href="{{ 'custom-section.css' | asset_url }}" media="print" onload="this.media='all'">
-<div class="section-container">
-    {%- for block in section.blocks -%}
-        {%- case block.type -%}
-            {%- when 'first-image'-%}
-            <div class="container-element">
-                <div>
-                    {{ block.settings.custom-section-image-1 | image_url: width: 180, height:180 | image_tag }}
-                </div>
-                <p>
-                    {{ block.settings.custom-section-text-1 }}
-                </p>
-            </div>
-            {%- when 'second-image'-%}
-            <div class="container-element">
-                <div>
-                    {{ block.settings.custom-section-image-2 | image_url: width: 180, height:180 | image_tag }}
-                </div>
-                <p>
-                    {{ block.settings.custom-section-text-2 }}
-                </p>
-            </div>
-            {%- when 'third-image'-%}
-            <div class="container-element">
-                <div>
-                    {{ block.settings.custom-section-image-3 | image_url: width: 180, height:180 | image_tag }}
-                </div>
-                <p>
-                    {{ block.settings.custom-section-text-3 }}
-                </p>
-            </div>
-        {%- endcase -%}
-    {%- endfor -%}
-</div>

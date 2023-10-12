@@ -1,3 +1,18 @@
+{{ 'sponser-section.css' | asset_url | stylesheet_tag }}
+<div class="sponser-section-container">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'heading'-%}
+            <h1> 
+                {{ block.settings.sponser-section-heading }}
+            </h1>
+            {%- when 'logo'-%}
+            <div> 
+                {{ block.settings.sponser-section-logo | image_url: width: 200, height: 200 | image_tag }}
+            </div>
+        {%- endcase -%}
+    {%- endfor -%}
+</div>
 {% schema %}
 {
     "name":"sponser-section",
@@ -17,7 +32,6 @@
         {
           "type": "logo",
           "name": "Logo",
-          "limit": 1,
           "settings": [
             {
               "type": "image_picker",
@@ -34,18 +48,3 @@
         ]
     }
 {% endschema %}
-<link rel="stylesheet" href="{{ 'sponser-section.css' | asset_url }}" media="print" onload="this.media='all'">
-<div class="sponser-section-container">
-    {%- for block in section.blocks -%}
-        {%- case block.type -%}
-            {%- when 'heading'-%}
-            <h1> 
-                {{ block.settings.sponser-section-heading }}
-            </h1>
-            {%- when 'logo'-%}
-            <div> 
-                {{ block.settings.sponser-section-logo | image_url: width: 200, height: 200 | image_tag }}
-            </div>
-        {%- endcase -%}
-    {%- endfor -%}
-</div>

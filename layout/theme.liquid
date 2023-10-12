@@ -239,6 +239,10 @@
           font-size: 1.6rem;
         }
       }
+      .page-width:has(#insta-feed){
+        max-width:100vw;
+        padding:0;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}

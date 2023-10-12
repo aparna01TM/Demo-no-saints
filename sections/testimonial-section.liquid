@@ -1,5 +1,25 @@
-{% comment %} {{ 'testimonial-section.css' | asset_url | stylesheet_tag }} {% endcomment %}
 <script src="{{ 'testimonial-section.js' | asset_url }}" defer="defer"></script>
+{{ 'testimonial-section.css' | asset_url | stylesheet_tag }}
+<h1 id ="testimonial-section__heading">{{ section.settings.testimonial-section-heading  }}</h1>
+<div class="testimonial-section-container">
+<div class="left-arrow" id="left-arrow">-</div>
+    <div class="section-containerr"> 
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'review'-%} 
+                <div class="container-elementt">
+                    <p>
+                        {{ block.settings.testimonial-section-review }}
+                    </p>
+                    <p>
+                        {{ block.settings.testimonial-section-author }}
+                    </p>
+                </div>
+            {%- endcase -%}
+        {%- endfor -%}   
+    </div>
+<div class="right-arrow" id="right-arrow">+</div>
+</div>
 {% schema %}
 {
     "name":"testimonial-section",
@@ -35,24 +55,3 @@
         ]
     }
 {% endschema %}
-<link rel="stylesheet" href="{{ 'testimonial-section.css' | asset_url }}" media="print" onload="this.media='all'">
-<h1 id ="testimonial-section__heading">{{ section.settings.testimonial-section-heading  }}</h1>
-<div class="testimonial-section-container">
-<div class="left-arrow" id="left-arrow">-</div>
-    <div class="section-containerr"> 
-        {%- for block in section.blocks -%}
-            {%- case block.type -%}
-                {%- when 'review'-%} 
-                <div class="container-elementt">
-                    <p>
-                        {{ block.settings.testimonial-section-review }}
-                    </p>
-                    <p>
-                        {{ block.settings.testimonial-section-author }}
-                    </p>
-                </div>
-            {%- endcase -%}
-        {%- endfor -%}   
-    </div>
-<div class="right-arrow" id="right-arrow">+</div>
-</div>
