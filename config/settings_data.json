@@ -159,15 +159,15 @@
         "settings": {
         }
       },
-      "6614979280454233053": {
-        "type": "shopify:\/\/apps\/preorder-now-sale-prequik\/blocks\/app-embed\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
+      "11349500561483629931": {
+        "type": "shopify:\/\/apps\/Notify Me\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {
         }
       },
-      "11349500561483629931": {
-        "type": "shopify:\/\/apps\/Notify Me\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
-        "disabled": false,
+      "6614979280454233053": {
+        "type": "shopify:\/\/apps\/preorder-now-sale-prequik\/blocks\/app-embed\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
+        "disabled": true,
         "settings": {
         }
       }
