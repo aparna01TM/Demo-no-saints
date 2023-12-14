@@ -147,26 +147,14 @@
         "settings": {
         }
       },
-      "1097096201824731535": {
-        "type": "shopify:\/\/apps\/kaktus-preorder-now-presale\/blocks\/app-embeded\/65705a60-a3b0-43ae-9dc8-15db78d76b3b",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "6986766168588894248": {
-        "type": "shopify:\/\/apps\/preorder-now-wolf\/blocks\/app-embed\/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "11349500561483629931": {
-        "type": "shopify:\/\/apps\/Notify Me\/blocks\/app-embed\/b399b727-6c85-44fc-9e21-63114bd72054",
+      "6614979280454233053": {
+        "type": "shopify:\/\/apps\/preorder-now-sale-prequik\/blocks\/app-embed\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
         "disabled": false,
         "settings": {
         }
       },
-      "6614979280454233053": {
-        "type": "shopify:\/\/apps\/preorder-now-sale-prequik\/blocks\/app-embed\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
+      "9670189827046205946": {
+        "type": "shopify:\/\/apps\/hextom-translate-my-store\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
         "disabled": false,
         "settings": {
         }
