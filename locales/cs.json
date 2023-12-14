@@ -546,6 +546,87 @@
       "previewing": "Zobrazujete náhled:",
       "saved_at": "Uloženo {{date}} v {{time}}",
       "viewing": "Prohlížíte si:"
+    },
+    "order_details": {
+      "fees": {
+        "restocking_fee": "Poplatek za naskladnění",
+        "return_shipping_fee": "Zpáteční zásilka"
+      }
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "errors": {
+          "payment": {
+            "shop_cash_unsupported_subscriptions": "Shop Cash nepodporuje předplatné.",
+            "shop_cash_unsupported_shipping": "Shop Cash nepodporuje zboží bez dopravy.",
+            "invalid_address_type": "Zadaný typ adresy je pro tuto platební metodu neplatný.",
+            "missing_retail_attributions": "Pro ručně zadané platby kreditní kartou jsou vyžadovány maloobchodní atribuce.",
+            "unexpected_retail_attributions": "Při platbě kreditní kartou byly neočekávaně poskytnuty maloobchodní zdroje.",
+            "invalid_card_source": "Tato relace nemá oprávnění používat tento zdroj karet.",
+            "wallet_content_missing": "Chybí obsah peněženky.",
+            "payment_instrument_not_found": "Nepodařilo se najít způsob platby",
+            "unauthorized_capture_method": "Konfigurace způsobu zachycení plateb není povolena.",
+            "saved_payment_methods_not_allowed": "Uložené způsoby platby nejsou povoleny.",
+            "saved_payment_methods_not_enabled": "Uložené způsoby platby nejsou pro tento obchod povoleny.",
+            "store_credit_not_enabled": "Kredit obchodu není pro tento obchod povolen.",
+            "store_credit_account_not_found": "Úvěrový účet obchodu nebyl nalezen.",
+            "store_credit_account_mismatch": "Kreditní účet obchodu neodpovídá identitě kupujícího.",
+            "store_credit_mismatched_currency": "Měna kreditního účtu obchodu se neshoduje s měnou pokladny.",
+            "store_credit_insufficient_funds": "Na kreditním účtu obchodu není dostatek prostředků.",
+            "store_credit_buying_gift_card": "Kredit obchodu nelze použít k nákupu dárkové karty.",
+            "gift_cards_not_allowed_for_b2b": "Dárkové karty nejsou povoleny v B2B obchodech.",
+            "method_required": "Musí být navržen způsob platby.",
+            "paypal_express_address_invalid": "PayPal vrátil neplatnou adresu.",
+            "shop_cash_unsupported_currency": "Shop Cash tuto měnu nepodporuje.",
+            "market_manager_blocks_wallet_payments": "Způsob platby není podporován správcem trhu."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Obchod nepřijímá spropitné.",
+            "only_one_tip_line_allowed": "Vícenásobné tipy nejsou podporovány.",
+            "tips_not_allowed_for_b2b": "Spropitné není povoleno v B2B obchodech.",
+            "currency_change_reset": "Spropitné bylo resetováno kvůli změně měny.",
+            "tips_not_allowed_for_deferred_purchase_options": "Tipy zatím nejsou podporovány pro odložené možnosti nákupu."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Tento koncept objednávky v aktuálním obchodě neexistuje.",
+            "staff_member_not_exist": "Tento personál v současné prodejně neexistuje.",
+            "location_not_exist": "Toto místo v aktuálním obchodě neexistuje.",
+            "point_of_sale_device_not_exist": "Toto zařízení prodejního místa v aktuálním obchodě neexistuje.",
+            "unresolvable_target_merchandise_lines": "Navrhovaná přiřazení prodeje nelze vyřešit vzhledem k aktuálnímu kontextu vyjednávání."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Nabídka kupujícího by měla obsahovat non-negotiable_terms.",
+            "invalid_signature": "Podpis pro {{target_terms}} je neplatný."
+          },
+          "inventory": {
+            "missing_quantity_value": "V řádcích inventáře kupujícího chybí pole Množství.",
+            "changing_behavior_not_allowed": "Tento klient nemá oprávnění měnit chování inventáře.",
+            "only_one_inventory_behavior_allowed": "V současné době je povoleno pouze jedno chování inventáře na jednu pokladnu."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Odmítnutí cla není u této pokladny povoleno."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "U této pokladny není povolena maloobchodní atribuce.",
+            "retail_attribution_required": "U této pokladny je vyžadována maloobchodní atribuce."
+          },
+          "captcha": {
+            "metadata_missing": "Pro tuto pokladnu je vyžadováno vyplnění captcha.",
+            "metadata_mismatch": "Poskytnutý poskytovatel captcha a typ neodpovídají očekávaným hodnotám.",
+            "token_missing": "K dokončení této pokladny je nutné poskytnout token captcha.",
+            "job_enqueue_failed": "Úlohu ověření captcha se nepodařilo zařadit do fronty.",
+            "job_already_queued": "Ověření captcha již bylo pro tento token captcha zařazeno do fronty.",
+            "token_expired": "Platnost poskytnutého tokenu captcha vypršela. Chcete-li pokračovat v placení, vyplňte nový obrázek captcha.",
+            "token_invalid": "Poskytnutý token captcha byl neplatný. Chcete-li pokračovat v placení, vyplňte nový obrázek captcha.",
+            "token_not_valid_for_session": "Poskytnuté captcha nelze použít u této pokladny."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Přijatá částka musí být v měně obchodu."
+          }
+        }
+      }
     }
   }
 }
