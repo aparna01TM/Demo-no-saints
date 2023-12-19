@@ -155,13 +155,7 @@
       },
       "9670189827046205946": {
         "type": "shopify:\/\/apps\/hextom-translate-my-store\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "12254500371210674976": {
-        "type": "shopify:\/\/apps\/casa-subscriptions\/blocks\/subscription-casa\/c33bc020-eed2-4bc0-9cdc-326fb2a1c573",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
