@@ -153,15 +153,15 @@
         "settings": {
         }
       },
-      "9670189827046205946": {
-        "type": "shopify:\/\/apps\/hextom-translate-my-store\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
+      "6744518860797519131": {
+        "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
         "disabled": false,
         "settings": {
         }
       },
-      "6744518860797519131": {
-        "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
-        "disabled": false,
+      "9670189827046205946": {
+        "type": "shopify:\/\/apps\/hextom-translate-my-store\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
+        "disabled": true,
         "settings": {
         }
       }
