@@ -35,7 +35,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -62,7 +62,7 @@
             "color_text_title": "#121212",
             "color_text_body": "#121212",
             "dividers_color": "#121212",
-            "bacgkround_color": "#FFFFFF",
+            "bacgkround_color": "#ffffff",
             "border_thickness": 2,
             "border_radius": 15,
             "supporting_text_title": "Purchase options",
